@@ -1,0 +1,16 @@
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.exe
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.deps.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.runtimeconfig.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.runtimeconfig.dev.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\ref\LargeDistance.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\bin\Debug\net5.0\LargeDistance.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.csproj.AssemblyReference.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.AssemblyInfoInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.AssemblyInfo.cs
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.csproj.CoreCompileInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\ref\LargeDistance.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\LargeDistance\obj\Debug\net5.0\LargeDistance.genruntimeconfig.cache

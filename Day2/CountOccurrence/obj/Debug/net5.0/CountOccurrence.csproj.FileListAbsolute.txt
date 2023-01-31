@@ -1,0 +1,16 @@
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.exe
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.deps.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.runtimeconfig.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.runtimeconfig.dev.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\ref\CountOccurrence.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\bin\Debug\net5.0\CountOccurrence.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.csproj.AssemblyReference.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.AssemblyInfoInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.AssemblyInfo.cs
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.csproj.CoreCompileInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\ref\CountOccurrence.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\CountOccurrence\obj\Debug\net5.0\CountOccurrence.genruntimeconfig.cache

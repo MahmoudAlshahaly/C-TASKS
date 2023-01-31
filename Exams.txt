@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+
+namespace McqQutions
+{
+    abstract class Quetions
+    {
+        public int id { get; set; }
+        public string body { get; set; }
+        public int mark { get; set; }
+        public Quetions(int id, string body, int mark)
+        {
+            this.id = id;
+            this.body = body;
+            this.mark = mark;
+        }
+
+    }
+    class MCQ : Quetions
+    {
+        public MCQ(int id, string body, int mark):base(id,body,mark)
+        {
+        }
+        public override string ToString()
+        {
+            return $"{id} - {body} => {mark}";
+        }
+    }
+    class TorF : Quetions,IDisposable
+    {
+        public TorF (int id, string body, int mark) : base(id, body, mark)
+        {
+        }
+        public override string ToString()
+        {
+            return $"{id} - {body} => {mark}";
+        }
+        public void Dispose()
+        {
+            Console.WriteLine("hello Dispose");
+        }
+    }
+    class Answer
+    {
+        public int id { get; set; }
+        public string body { get; set; }
+        public Answer(int id, string body)
+        {
+            this.id = id;
+            this.body = body;
+        }
+        public override string ToString()
+        {
+            return $"{id} - {body} ";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<Quetions, List<Answer>> Exam = new Dictionary<Quetions, List<Answer>>();
+            List<Answer> TOrF = new List<Answer>()
+            {
+                new Answer(1,"True"),
+                new Answer(2,"False"),
+            };
+
+            Exam.Add(new TorF(1, "First Question", 20), TOrF);
+            Exam.Add(new TorF(2, "Second Question", 20), TOrF);
+            Exam.Add(new TorF(3, "Third Question", 20), TOrF);
+
+            foreach (var item in Exam)
+            {
+                Console.WriteLine(item.Key.ToString());
+                foreach (Answer answer in item.Value)
+                {
+                    Console.WriteLine(answer.ToString());
+                }
+            }
+        }
+    }
+}
+

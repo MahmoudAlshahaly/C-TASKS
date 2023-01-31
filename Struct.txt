@@ -1,0 +1,183 @@
+
+namespace Task3
+{
+    enum Gender
+    {
+        Male,Female,
+    }
+    enum Role
+    {
+        admin,superVisor,student,DBA
+    }
+    struct Date
+    {
+        int day,month,year;
+       public Date(int _day,int _month,int _year)
+        {
+            Day= _day;
+            Month= _month;
+            Year= _year;
+        }
+        public Date(string Date)
+        {
+            string[] dateNumbers = Date.Split('-','/');// To get the data in different formate
+            Day = int.Parse(dateNumbers[0]);
+            Month = int.Parse(dateNumbers[1]);
+            Year = int.Parse(dateNumbers[2]);
+        }
+        public int Day
+        {
+            set
+            {
+                if(value < 31)
+                {
+                day= value;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            get
+            {
+                return day;
+            }
+        }
+        public int Month
+        {
+            set {
+                if (month < 12)
+                {
+                     month = value;
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            get
+            {
+                return month;
+            }
+        }
+        public int Year
+        {
+            set {
+                if (value > 0)
+                {
+                  year = value;
+                }
+                else
+                {
+                  throw new Exception();
+                }
+            }
+            get
+            {
+                return year;
+            }
+        }
+        public override string ToString()
+        {
+            return $"{day}-{month}-{year}";
+        }
+    }
+    class Employee
+    {
+        int id;
+        double salary;
+        Gender gender;
+        Date hiringDate;
+        public Employee(int _id,double _salary,string _gender,string _hiringDate) {
+            id = _id;
+            salary = _salary;
+            gender = (Gender)Enum.Parse(typeof(Gender), _gender);
+            hiringDate= new Date(_hiringDate);
+        }
+        public Employee()
+        {
+
+        }
+        public int Id
+        {
+            set
+            {
+                id = value;
+            }
+            get
+            {
+                return id;
+            }
+        }
+        public Date HiringDate
+        {
+            set
+            {
+                hiringDate.Day = value.Day;
+                hiringDate.Month = value.Month;
+                hiringDate.Year = value.Year;
+            }
+            get 
+            { 
+                return hiringDate; 
+            }
+        }
+        public double Salary
+        {
+            set { 
+            salary = value;
+            }
+            get
+            {
+                return salary;
+            }
+        }
+        public Gender Gender
+        {
+            set
+            {
+                gender = value;
+            }
+            get
+            {
+                return gender;
+            }
+        }
+        public override string ToString()
+        {
+            return $"The Id == {Id}\nThe Salary == {Salary}\nThe Gender == {Gender}\n The Hiring Date == {HiringDate.ToString()}";
+        }
+    }
+    internal class Program
+    {
+        static void Main()
+        {
+            #region Getting Data From User
+            Console.WriteLine("Enter The Number of Employees");
+            int EmployeeNumber = int.Parse(Console.ReadLine());
+            Employee[] arr = new Employee[EmployeeNumber];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = new Employee();
+                Console.WriteLine($"Enter The data of Employee Number {i + 1} ");
+                Console.Write("The Id == ");
+                arr[i].Id = int.Parse(Console.ReadLine());
+                Console.Write("The Salary == ");
+                arr[i].Salary = int.Parse(Console.ReadLine());
+                Console.Write("The Gender == ");
+                string stringGender = Console.ReadLine();
+                arr[i].Gender = (Gender)Enum.Parse(typeof(Gender), stringGender);
+                Console.Write("The Day of Hiring == ");
+                arr[i].HiringDate = new Date(Console.ReadLine());
+            }
+            #endregion
+            #region Printing The Data
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine($"\nThe Data of Employee Number {i + 1}");
+                Console.WriteLine(arr[i].ToString());
+            }
+            #endregion
+        }
+    }
+}

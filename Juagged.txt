@@ -1,0 +1,70 @@
+using System;
+
+namespace JajjedArray
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter Number Of Student = ");
+            int NumOfStudent = int.Parse(Console.ReadLine());
+
+            int[][] StudentSub = new int[NumOfStudent][];
+            int NumOfSubject;
+            int maxofSubject = 0;
+            for (int i = 0; i < StudentSub.Length; i++)
+            {
+
+                Console.WriteLine($"Student Number {i+1} ");
+
+                 Console.Write("Enter Number Of Subject = ");
+                 NumOfSubject = int.Parse(Console.ReadLine());
+                if (NumOfSubject > maxofSubject)
+                {
+                    maxofSubject = NumOfSubject;
+                }
+                StudentSub[i] = new int[NumOfSubject];
+                for (int j= 0; j < StudentSub[i].Length; j++)
+                {
+                    Console.Write($"Subject Number {j + 1 }= ");
+                    StudentSub[i][j] = int.Parse(Console.ReadLine());
+                }
+            }
+
+
+            for (int i = 0; i < StudentSub.Length; i++)
+            {
+                int Sum = 0;
+                Console.WriteLine($"Student Number {i + 1}");
+                for (int j = 0; j < StudentSub[i].Length; j++)
+                {
+                    Console.WriteLine($"Subject Number {j + 1} = {StudentSub[i][j] }");
+                    Sum += StudentSub[i][j];
+                }
+                Console.WriteLine($"Sum OF Subject Degree  for Student {i + 1 } = {Sum}");
+                Console.WriteLine("----------------------------------");
+
+            }
+            float Avarage;
+            int Num;
+            for (int j = 0; j < maxofSubject; j++)
+            {
+                int Sum = 0;
+                Avarage = 0;
+                Num = 0;
+                for (int i = 0; i < StudentSub.Length; i++)
+                {
+                    if (StudentSub[i].Length > j)
+                    {
+                        Sum += StudentSub[i][j];
+                        Num++;
+                    }
+                }
+                Avarage = Sum /Num;
+                Console.WriteLine($"Avarage of Subject {j + 1 } = {Avarage}");
+                Console.WriteLine("----------------------------------");
+
+            }
+        }
+    }
+}

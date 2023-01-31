@@ -1,0 +1,60 @@
+using System;
+
+namespace _2darray
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter number of Student");
+            int numOfStudent = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter number of Subject");
+            int numOfSubject = int.Parse(Console.ReadLine());
+
+            int[,] StuSubject = new int[numOfStudent,numOfSubject];
+            Console.WriteLine("---------------------------------------------------------------------");
+
+            for (int i = 0; i < numOfStudent; i++)
+            {
+                Console.WriteLine($"Student Number {i+1}");
+                for (int j = 0; j < numOfSubject; j++)
+                {
+                    Console.Write($"Subject Number {j+1} = ");
+                    StuSubject[i, j] = int.Parse(Console.ReadLine());
+                }
+                Console.WriteLine("----------------------------------");
+            }
+            Console.WriteLine("---------------------------------------------------------------------");
+
+            float Avarage = 0;
+            for (int i = 0; i < numOfStudent; i++)
+            {
+                int Sum = 0;
+                Console.WriteLine($"Student Number {i + 1}");
+                for (int j = 0; j < numOfSubject; j++)
+                {
+                    Console.WriteLine($"Subject Number {j + 1} = {  StuSubject[i, j] }");
+                    Sum += StuSubject[i, j];
+                }
+                //Avarage +=;
+                Console.WriteLine($"Sum OF Subject Degree  for Student {i + 1 } = {Sum}");
+                Console.WriteLine("----------------------------------");
+
+            }
+
+            for (int j = 0; j <  numOfSubject; j++)
+            {
+                int Sum = 0;
+                Avarage = 0;
+                for (int i = 0; i < numOfStudent; i++)
+                {
+                    Sum += StuSubject[i, j];
+                }
+                Avarage = Sum/ numOfStudent;
+                Console.WriteLine($"Avarage of Subject {j + 1 } = {Avarage}");
+                Console.WriteLine("----------------------------------");
+
+            }
+        }
+    }
+}

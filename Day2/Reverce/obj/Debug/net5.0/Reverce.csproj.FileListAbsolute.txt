@@ -1,0 +1,16 @@
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.exe
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.deps.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.runtimeconfig.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.runtimeconfig.dev.json
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\ref\Reverce.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\bin\Debug\net5.0\Reverce.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.csproj.AssemblyReference.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.AssemblyInfoInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.AssemblyInfo.cs
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.csproj.CoreCompileInputs.cache
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\ref\Reverce.dll
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.pdb
+C:\Users\Eng-Mahmoud Ahmed\Desktop\c#\Day2\Reverce\obj\Debug\net5.0\Reverce.genruntimeconfig.cache

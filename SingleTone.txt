@@ -1,0 +1,55 @@
+using System;
+
+namespace SingleToneNic
+{
+    #region singletone
+    [Flags]
+    enum type : byte
+    {
+        ethernet=1, tokenrange=2
+    }
+    class Nic
+    {
+         static string Manufacture { get; set; }
+         static string MAC { get; set; }
+         static string Address { get; set; }
+         static type t { get; set; }
+
+        static Nic GN = null;
+        Nic()
+        {
+  
+        }
+        public static Nic GetNic(string Manufacture, string MAC, string Address, type t)
+        {
+            Nic.Manufacture = Manufacture;
+            Nic.MAC = MAC;
+            Nic.Address = Address;
+            Nic.t = t;
+
+            if (GN == null)
+                GN = new Nic();
+
+            return GN;
+        }
+        public override string ToString()
+        {
+            return $"{Manufacture}-{MAC}-{Address}-{t}";
+        }
+    }
+    #endregion
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Nic N = Nic.GetNic("Dell","0021.122f.faa11.g12b","Assia", (type)1);
+            Console.WriteLine(N.ToString());
+            Console.WriteLine(N.GetHashCode());
+            Console.WriteLine("------------------------");
+            Nic N1 = Nic.GetNic("Hp", "122f.0021.faa11.g12b", "Egypt", (type)3);
+            Console.WriteLine(N1.ToString());
+            Console.WriteLine(N1.GetHashCode());
+
+        }
+    }
+}
